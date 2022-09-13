@@ -18,11 +18,9 @@ class Rotator {
       this.interval = this.rotateItems[this.counter].dataset.speed;
       this.rotate();
       console.log(this.interval);
-
+      
     }, this.interval);
   }
-
 }
-
 
 const rotator = new Rotator(document.querySelector('.card'));
