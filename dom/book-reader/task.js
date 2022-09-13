@@ -20,10 +20,8 @@ class BookReader {
     event.preventDefault();
     const dataSizeValue = event.target.dataset.size;
 
-    //Убираем класс active у элементов выбора размера текста
     this.clearClass(this.fontSizeControl, 'font-size_active');
 
-    //Проверяем доп классы у book
     this.container.classList.toggle('book_fs-small', false);
     this.container.classList.toggle('book_fs-big', false);
 
