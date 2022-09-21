@@ -35,8 +35,9 @@ function createTaskElement(taskValue) {
 
 function removeTask(event) {
 
-  if (!event.target.matches('.task__remove')) return;
-
+  if (!event.target.matches('.task__remove')) {
+    return;
+  }
   const removeItem = event.target.closest('div.task');
     
   removeItem.remove();
