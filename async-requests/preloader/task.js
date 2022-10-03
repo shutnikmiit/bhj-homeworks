@@ -5,7 +5,7 @@ const loader = document.querySelector('#loader');
 const requestUrl = 'https://netology-slow-rest.herokuapp.com';
 
 
-let xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 xhr.addEventListener('readystatechange', requestHandler);
 xhr.open('GET', requestUrl);
 xhr.send();
